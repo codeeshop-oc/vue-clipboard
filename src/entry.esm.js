@@ -1,6 +1,6 @@
 
 // Import vue component
-import component from '@/clipboard.vue';
+import component from '@/Clipboard.vue';
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
@@ -10,8 +10,8 @@ export default /*#__PURE__*/(() => {
   const installable = component;
 
   // Attach install function executed by Vue.use()
-  installable.install = (app) => {
-    app.component('Clipboard', installable);
+  installable.install = (Vue) => {
+    Vue.component('Clipboard', installable);
   };
   return installable;
 })();

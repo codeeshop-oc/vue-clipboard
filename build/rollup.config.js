@@ -7,7 +7,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import babel from '@rollup/plugin-babel';
-import PostCSS from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
@@ -42,20 +41,15 @@ const baseConfig = {
       'process.env.NODE_ENV': JSON.stringify('production'),
     },
     vue: {
+      css: true,
+      template: {
+        isProduction: true,
+      },
     },
     postVue: [
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
       }),
-      // Process only `<style module>` blocks.
-      PostCSS({
-        modules: {
-          generateScopedName: '[local]___[hash:base64:5]',
-        },
-        include: /&module=.*\.css$/,
-      }),
-      // Process all `<style>` blocks except `<style module>`.
-      PostCSS({ include: /(?<!&module=.*)\.css$/ }),
       commonjs(),
     ],
     babel: {
@@ -90,7 +84,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.js',
     external,
     output: {
-      file: 'dist/clipboard.esm.js',
+      file: 'dist/Clipboard.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -122,7 +116,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/clipboard.ssr.js',
+      file: 'dist/Clipboard.ssr.js',
       format: 'cjs',
       name: 'Clipboard',
       exports: 'auto',
@@ -131,7 +125,13 @@ if (!argv.format || argv.format === 'cjs') {
     plugins: [
       replace(baseConfig.plugins.replace),
       ...baseConfig.plugins.preVue,
-      vue(baseConfig.plugins.vue),
+      vue({
+        ...baseConfig.plugins.vue,
+        template: {
+          ...baseConfig.plugins.vue.template,
+          optimizeSSR: true,
+        },
+      }),
       ...baseConfig.plugins.postVue,
       babel(baseConfig.plugins.babel),
     ],
@@ -145,7 +145,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/clipboard.min.js',
+      file: 'dist/Clipboard.min.js',
       format: 'iife',
       name: 'Clipboard',
       exports: 'auto',

@@ -8,9 +8,9 @@
 
 ```bash
 # npm
-npm i vue-clipboard
+npm i @codeeshop/vue-clipboard
 # yarn
-yarn add vue-clipboard
+yarn add @codeeshop/vue-clipboard
 ```
 
 ### cdn
@@ -32,7 +32,7 @@ https://unpkg.com/@codeeshop/vue-clipboard
 </template>
 
 <script>
-  import Clipboard from 'vue-clipboard'
+  import Clipboard from '@codeeshop/vue-clipboard'
   
   export default {
     name: 'MyComponent',

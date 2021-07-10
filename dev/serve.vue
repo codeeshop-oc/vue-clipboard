@@ -1,8 +1,8 @@
 <script>
-import { defineComponent } from 'vue';
-import Clipboard from '@/clipboard.vue';
+import Vue from 'vue';
+import Clipboard from '@/Clipboard.vue';
 
-export default defineComponent({
+export default Vue.extend({
   name: 'ServeDev',
   components: {
     Clipboard
@@ -12,6 +12,6 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <clipboard />
+    <Clipboard :logs="true" />
   </div>
 </template>
