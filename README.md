@@ -8,7 +8,7 @@
 
 ## 🎨 Features
 
-Find out all available features on [setting props](https://github.com/codeeshop-oc/vue-clipboard/blob/main/docs/API.md) and see how that works on [examples](https://codeeshop-oc.github.io/vue-clipboard/).
+Find out all available features on [setting props](https://github.com/codeeshop-oc/vue-clipboard/blob/main/docs/API.md#props) and see how that works on [examples](https://codeeshop-oc.github.io/vue-clipboard/).
 
 
 ## 🚚 Installation
