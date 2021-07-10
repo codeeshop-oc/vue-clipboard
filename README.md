@@ -2,6 +2,15 @@
 
 > 🚥 Copy the text data in clipboard from element selection or pass the text data 
 
+[![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/LICENSE)
+[![bit](https://img.shields.io/badge/components-1-yellowgreen)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/src/Clipboard.vue)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/codeeshop-oc/vue-clipboard/issues?&q=is%3Aissue+is%3Aopen)
+
+## 🎨 Features
+
+Find out all available features on [setting props](https://github.com/codeeshop-oc/vue-clipboard/docs/API.md) and see how that works on [examples](https://codeeshop-oc.github.io/vue-clipboard/).
+
+
 ## 🚚 Installation
 
 ### yarn/npm
