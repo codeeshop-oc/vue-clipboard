@@ -1,6 +1,6 @@
 {
   "name": "@codeeshop/vue-clipboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/Clipboard.ssr.js",
   "browser": "dist/Clipboard.esm.js",
