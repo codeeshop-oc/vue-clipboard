@@ -17,8 +17,7 @@ Check out [demo examples](https://codeeshop-oc.github.io/vue-clipboard/) for set
 | Prop name        | Description                                                                                                                                                                      | Type    | Values                | Default      |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ |
 | logs             | enables logging in case of errors                    | boolean | -                     | false        |
-| text             | copy the text passed in the prop if the text prop is not passed it copies selected
-                      text from mouse or cursor                           | string  | -                     | ''           |
+| text             | copy the text passed in the prop if the text prop is not passed it copies selected text from mouse or cursor                           | string  | -                     | ''           |
 
 ### Listening to Events
 
