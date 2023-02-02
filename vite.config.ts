@@ -19,6 +19,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['vue'],
       output: {
+        assetFileNames: "vue-clipboard.[ext]",
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {

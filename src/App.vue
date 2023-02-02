@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// import VueClipboard from './components/VueClipboard.vue'
-import VueClipboard from '/dist/vue-clipboard.js'
-import '/dist/style.css'
+import VueClipboard from './components/VueClipboard.vue'
 </script>
 
 <template>
