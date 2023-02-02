@@ -49,6 +49,7 @@ https://unpkg.com/@codeeshop/vue-clipboard
 
 <script>
   import VueClipboard from '@codeeshop/vue-clipboard'
+  import '@codeeshop/vue-clipboard.css'
   
   export default {
     name: 'MyComponent',
