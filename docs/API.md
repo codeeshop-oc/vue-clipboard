@@ -6,7 +6,7 @@
 
 ```html
 <template>
-  <Clipboard :logs="true" :text="'Enjoy a piece of Cake Everyday'" />
+  <VueClipboard :logs="true" :text="'Enjoy a piece of Cake Everyday'" :enableMilliSeconds="5" />
 </template>
 ```
 
@@ -14,16 +14,17 @@
 
 Check out [demo examples](https://codeeshop-oc.github.io/vue-clipboard/) for settings usage.
 
-| Prop name        | Description                                                                                                                                                                      | Type    | Values                | Default      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ |
-| logs             | enables logging in case of errors                    | boolean | -                     | false        |
-| text             | copy the text passed in the prop if the text prop is not passed it copies selected text from mouse or cursor                           | string  | -                     | ''           |
+| Prop name          | Description                                                                                                                                                                                | Type    | Default      |
+| ------------------ | -----------------------------------------------------| ------- | ------------ |
+| logs               | enables logging in case of errors                    | boolean | false        |
+| text               | copy the text passed in the prop if the text prop is not passed it copies selected text from mouse or cursor                                                                      | string  | ''           |
+| enableMilliSeconds | after copy is successfull it reverts the button text to copy after entered milliseconds                                                                | string  | 5            |
 
 ### Listening to Events
 
 ```html
 <template>
-  <Clipboard @clicked="onClicked" />
+  <VueClipboard @clicked="onClicked" />
 </template>
 <script>
   export default {
@@ -48,11 +49,11 @@ Check out [demo examples](https://codeeshop-oc.github.io/vue-clipboard/) for set
 
 ```html
 <template>
-  <Clipboard @clicked="onClicked">
+  <VueClipboard @clicked="onClicked">
     <template #button>
       <button class="btn">Copy</button>
     </template>
-  </Clipboard>
+  </VueClipboard>
 </template>
 ```
 

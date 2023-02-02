@@ -2,10 +2,16 @@
 
 > 🚥 Copy the text data in clipboard from element selection or pass the text data 
 
-[![npm](https://img.shields.io/badge/npm-1.0.3-blue)](https://www.npmjs.com/package/@codeeshop/vue-clipboard)
+[![npm](https://img.shields.io/badge/npm-3.0.0-blue)](https://www.npmjs.com/package/@codeeshop/vue-clipboard)
 [![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/LICENSE)
 [![bit](https://img.shields.io/badge/components-1-yellowgreen)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/src/Clipboard.vue)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/codeeshop-oc/vue-clipboard/issues?&q=is%3Aissue+is%3Aopen)
+
+## Version Support
+
+Vue 3 - Current Branch ( TypeScript + Vite + vitest )
+
+[Vue 2](https://github.com/codeeshop-oc/vue-lightbox-advanced/tree/vue2)
 
 ## 🎨 Features
 
@@ -37,16 +43,16 @@ https://unpkg.com/@codeeshop/vue-clipboard
 ```html
 <template>
   <div>
-    <Clipboard />
+    <VueClipboard />
   </div>
 </template>
 
 <script>
-  import Clipboard from '@codeeshop/vue-clipboard'
+  import VueClipboard from '@codeeshop/vue-clipboard'
   
   export default {
     name: 'MyComponent',
-    components: { Clipboard },
+    components: { VueClipboard },
   }
 </script>
 ```
