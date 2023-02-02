@@ -1,6 +1,6 @@
 {
   "name": "@codeeshop/vue-clipboard",
-  "version": "3.0.0",
+  "version": "3.0.0-alpha",
   "type": "module",
   "description": "Copy the text data in clipboard from element selection or pass the text data",
   "files": [

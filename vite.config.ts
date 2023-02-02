@@ -11,23 +11,21 @@ export default defineConfig({
   test: {
     environment: 'happy-dom'
   },
-  // build: {
-  //   lib: {
-  //     entry: resolve(__dirname, 'src/index.ts'),
-  //     name: 'vue-clipboard',
-  //   },
-  //   rollupOptions: {
-  //     external: ['vue'],
-  //     output: {
-  //       sourcemap: false,
-  //       // Provide global variables to use in the UMD build
-  //       // for externalized deps
-  //       globals: {
-  //         vue: 'Vue'
-  //       }
-  //     }
-  //   }
-
-  // },
-    // eslint()
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'vue-clipboard',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        // Provide global variables to use in the UMD build
+        // for externalized deps
+        globals: {
+          vue: 'Vue'
+        }
+      }
+    }
+  }
+  // eslint()
 })

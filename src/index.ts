@@ -1,1 +1,2 @@
-export { default as VueClipboard } from './components/VueClipboard.vue'
+import VueClipboard from './components/VueClipboard.vue'
+export default VueClipboard
