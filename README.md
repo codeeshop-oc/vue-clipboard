@@ -6,6 +6,7 @@
 [![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/LICENSE)
 [![bit](https://img.shields.io/badge/components-1-yellowgreen)](https://github.com/codeeshop-oc/vue-clipboard/blob/main/src/Clipboard.vue)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/codeeshop-oc/vue-clipboard/issues?&q=is%3Aissue+is%3Aopen)
+[![Node.js Package](https://github.com/codeeshop-oc/vue-clipboard/actions/workflows/release-package.yml/badge.svg)](https://github.com/codeeshop-oc/vue-clipboard/actions/workflows/release-package.yml)
 
 ## Version Support
 
